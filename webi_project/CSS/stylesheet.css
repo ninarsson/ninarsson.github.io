@@ -20,6 +20,12 @@ h2 {
 	margin-top: 0;
 }
 
+h3 {
+	font-family: Open Sans;
+	font-size: 25px;
+	margin-top: 0;
+}
+
 p {
 	font-family: Montserrat;
 	font-size: 20px;
@@ -272,16 +278,32 @@ background-color: #D1A026;
 	color: #f5f5f5;
 }
 
-.gallery-module img {
-	width: 100%;
-}
+.gallery-module img {width: 100%;}
 
 .gallery-module header {
 	position: absolute;
 	bottom: 5px;
 	padding: 10px;
-	background-color: black;
 	background-color: rgba(0,0,0,.8);
+}
+
+.shop-module {
+	margin-bottom: 30px;
+	color: #f5f5f5;
+	text-align: center;
+}
+
+.shop-module img {width: 100%;}
+
+.shop-module header {padding: 20px;}
+
+.shop-module header a, .shop-module header a:visited {
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+.shop-module header a:hover {
+	text-decoration: underline;
 }
 
 
@@ -338,6 +360,44 @@ background-color: #D1A026;
 .tabcontent h2 { color: black; }
 
 .tabcontent img { width: 100%; }
+
+
+/* ---------------------- SHOP ELEMENTS ------------------------- */
+
+#sort {
+	width: 100%;
+	border: 1px solid #5E5F5E; 
+	background-color: #212120;
+	padding: 5px;
+	margin-bottom: 20px;
+	color: #5E5F5E;
+	font-family: Montserrat;
+	font-size: 18px;
+}
+
+#drop-nav {
+	background-color: #212120;
+	width: 100%;
+}
+
+#drop-nav a {
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	color: #5E5F5E;
+	font-family: Montserrat;
+	font-size: 18px;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #5E5F5E;
+}
+
+.drop-active { background-color: black; }
+
+.drop-container a {
+	padding-left: 20px !important;
+}
 
 
 /* ------------------ FOOTER CONTENT ------------------*/
