@@ -1,0 +1,461 @@
+
+body {
+	margin: 0;
+	background-color: #111013;
+	color: #5E5F5E;
+	font-family: Montserrat;
+	font-size: 20px;
+}
+
+h1 {
+	color: white;
+	font-family: Open Sans;
+	font-size: 40px;
+	margin-top: 0;
+}
+
+h2 {
+	font-family: Open Sans;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+h3 {
+	font-family: Open Sans;
+	font-size: 25px;
+	margin-top: 0;
+}
+
+p {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.top-pad {margin-top:80px;}
+
+.row { 
+	display: flex;
+	width: 100%;
+}
+
+.column-3 {
+  flex: 33.33%;
+  padding: 20px;
+}
+
+.column-2 {
+  flex: 50%;
+  padding: 20px;
+}
+
+.column-1-3 {
+  flex: 66.67%;
+  padding: 20px;
+}
+
+.column-20 {
+  flex: 20%;
+  padding: 20px;
+}
+
+.column-40 {
+	flex: 40%;
+	padding: 20px;
+}
+
+.container {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 60px;
+}
+
+#logo {
+  height: 77px;
+  float: left;
+  margin-right: 20px;
+}
+
+#search_box {
+	background-color: #D1A026;
+	padding: 10px;
+	position: absolute;
+	top: 77px;
+	right: 0;
+	display: none;
+	z-index: 1;
+}
+
+input[type=text] {
+	padding: 10px;
+	border: none;
+	background-color: #FFC83E; 
+}
+
+input[type=submit] {
+	padding: 10px;
+	border: none;
+	background-color: #FFC83E; 
+}
+
+.show { display: block !important; }
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#navbar li a:link, #navbar li a:visited {
+	display: block;
+	color: #EEEEEE;
+	text-decoration: none;
+	text-align: center;
+	font-size: 28px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	padding: 18px;
+	font-family: Open Sans;
+	
+}
+#navbar li a:hover, #navbar li a:active {color: #D1A026;}
+
+#navbar li {
+	float: left;
+}
+
+.nav-active {color:#D1A026 !important;}
+
+.button {
+	background-color: #D1A026;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 11px;
+	margin-right: 11px;
+	text-transform: uppercase;
+	font-family: Open Sans;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+}
+
+
+.header-button { 
+	float: right;
+	font-size: 18px;
+}
+
+.ex-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 11px;
+  margin-right: 11px;
+  text-transform: uppercase;
+  font-family: Open Sans;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button {
+  background-color: #D1A026;
+  border: none;
+  color: black;
+  padding: 26px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 11px;
+  margin-right: 11px;
+  float: right;
+  background-image: url('https://img.icons8.com/pastel-glyph/2x/search.png');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
+
+
+.button:hover, .search-button:hover { 
+	background-color: #FFC83E; 
+	color: black;
+}
+
+.ex-button:hover {
+	background-color: #212120;
+}
+
+
+.full-width {
+	position: relative; /* child absolute */
+	left: 0;
+	right: 0;
+	height: auto;
+	background-color: #111013;
+}
+
+/* Container holding the image and the text */
+.head-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+/* Bottom right text */
+.text-block {
+	position: absolute;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 20px;
+	font-family: Open Sans;
+}
+
+.button-header{
+	position: absolute;
+	background-color: black;
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 350px;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 20px;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Open Sans;
+}
+
+.button-header:hover{ 
+background-color: #D1A026; 
+	cursor: pointer;
+}
+
+#gallery-container { position: relative; }
+
+#gallery-container img {
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+#gallery-middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#gallery-container:hover img { opacity: 0.3;}
+
+#gallery-container:hover #gallery-middle {opacity: 1;}
+
+.gallery-module {
+	position: relative;
+	margin-bottom: 10px;
+	color: #f5f5f5;
+}
+
+.gallery-module img {width: 100%;}
+
+.gallery-module header {
+	position: absolute;
+	bottom: 5px;
+	padding: 10px;
+	background-color: rgba(0,0,0,.8);
+}
+
+.shop-module {
+	margin-bottom: 30px;
+	color: #f5f5f5;
+	text-align: center;
+}
+
+.shop-module img {width: 100%;}
+
+.shop-module header {padding: 20px;}
+
+.shop-module header a, .shop-module header a:visited {
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+.shop-module header a:hover {
+	text-decoration: underline;
+}
+
+
+/* --------------------- TABS ON THE EXHIBITION PAGE --------------------------- */
+
+
+
+.tab {
+  overflow: hidden;
+  background-color: #212120;
+  width: 100%;
+  display: inline-flex;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: Montserrat;
+	font-size: 20px;
+	color: #5E5F5E;
+	font-weight: bold;
+	width: 14.28%;
+	display: block;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #D1A026;
+  color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #D1A026;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 10px;
+  border-top: none;
+	background-color: #D1A026;
+	color: black;
+	border: 1px solid #D1A026;
+}
+
+.tabcontent h2 { color: black; }
+
+.tabcontent img { width: 100%; }
+
+
+/* ---------------------- SHOP ELEMENTS ------------------------- */
+
+#sort {
+	width: 100%;
+	border: 1px solid #5E5F5E; 
+	background-color: #212120;
+	padding: 5px;
+	margin-bottom: 20px;
+	color: #5E5F5E;
+	font-family: Montserrat;
+	font-size: 18px;
+}
+
+
+#accordion {
+	background-color: #212120;
+	width: 100%;
+}
+
+#accordion section div {
+	display: none;
+}
+
+#accordion a {
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	color: #5E5F5E;
+	font-family: Montserrat;
+	font-size: 18px;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #5E5F5E;
+}
+
+#accordion a:hover {
+	background-color: #30302f;
+}
+
+#accordion section:target div {
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	color: #111013;
+	font-family: Montserrat;
+	font-size: 18px;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #5E5F5E;
+	padding-left: 20px !important;
+	background-color: #474745;
+}
+
+#accordion section div:hover {
+	background-color: #5E5F5E;
+}
+
+
+/* ------------------ FOOTER CONTENT ------------------*/
+
+
+
+footer {margin-top: 100px;}
+
+.footer-row {
+  display: flex;
+  padding: 0 40px 20px 40px;
+  background-color: #212120;
+}
+
+.links-list li a:link, .links-list li a:visited {
+	text-decoration: none;
+	color: #5E5F5E;
+	font-family: Montserrat;
+}
+
+.links-list li a:hover, .links-list li a:active {
+	color: white;
+}
+
+.links-list-active {
+	color: white !important;
+}
+
+#social-group img {
+	margin-right: 5px;
+}
+
+
+.copyright {
+	background-color: #111013;
+	padding: 10px 0 10px 60px;
+}
