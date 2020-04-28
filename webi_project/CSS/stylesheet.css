@@ -90,11 +90,13 @@ p {
 input[type=text] {
 	padding: 10px;
 	border: none;
+	background-color: #FFC83E; 
 }
 
 input[type=submit] {
 	padding: 10px;
 	border: none;
+	background-color: #FFC83E; 
 }
 
 .show { display: block !important; }
@@ -375,12 +377,17 @@ background-color: #D1A026;
 	font-size: 18px;
 }
 
-#drop-nav {
+
+#accordion {
 	background-color: #212120;
 	width: 100%;
 }
 
-#drop-nav a {
+#accordion section div {
+	display: none;
+}
+
+#accordion a {
 	padding: 5px;
 	text-decoration: none;
 	display: block;
@@ -393,10 +400,27 @@ background-color: #D1A026;
 	border: 1px solid #5E5F5E;
 }
 
-.drop-active { background-color: black; }
+#accordion a:hover {
+	background-color: #30302f;
+}
 
-.drop-container a {
+#accordion section:target div {
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	color: #111013;
+	font-family: Montserrat;
+	font-size: 18px;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #5E5F5E;
 	padding-left: 20px !important;
+	background-color: #474745;
+}
+
+#accordion section div:hover {
+	background-color: #5E5F5E;
 }
 
 

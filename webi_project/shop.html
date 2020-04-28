@@ -18,6 +18,7 @@ function showsearch() {
 }
 
 </script>
+
 </head>
 <body>
 
@@ -25,7 +26,7 @@ function showsearch() {
 	<a href="index.html"><img id="logo" src="images/logo.png" alt="007 Museum Logo"></a>
 	<li><a href="visit.html">Visit</a></li>
 	<li><a href="exhibition.html">Exhibition</a></li>
-	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="gallery/events.html">Gallery</a></li>
 	<li><a href="shop.html" class="nav-active">Shop</a></li>
 	<a href="#" class="search-button" onclick="showsearch()"></a>
 	<a href="#" class="button header-button">Book A Party</a>
@@ -43,24 +44,41 @@ function showsearch() {
 	<div class="column-20">
 		<h3>Sort By</h3>
 		<select id="sort" name="sort">
-		<option value="Recommended">Recommended</option>
-		<option value="Highest">Price: Highest first</option>
-		<option value="Lowest">Price: Lowest First</option>
-  </select>
+			<option value="Recommended">Recommended</option>
+			<option value="Highest">Price: Highest first</option>
+			<option value="Lowest">Price: Lowest First</option>
+		</select>
 		<h3>Categories</h3>
-		<div id="drop-nav">
-		<a href="#" class="drop-btn">Clothing</a>
-			<div class="drop-container">
-			<a href="#">Women's</a>
-			<a href="#">Men's</a>
-			</div>
-		<a href="#">Stationary</a>
-		<a href="#">Action Figures</a>
-		<a href="#">Magazines</a>
-		<a href="#">Glassware</a>
-		<a href="#">Mugs</a>
-		<a href="#">Miscellaneous</a>
+		
+		
+		<div id="accordion">
+			<section id="clothing">
+			<a href="#clothing">Clothing</a>
+			<div href="#">Men's</div>
+			<div href="#">Women's</div>
+			</section>
+			<section id="stationary">
+			<a href="#stationary">Stationary</a>
+			</section>
+			<section id="actionfigures">
+			<a href="#actionfigures">Action Figures</a>
+			</section>
+			<section id="magazines">
+			<a href="#magazines">Magazines</a>
+			</section>
+			<section id="glassware">
+			<a href="#glassware">Glassware</a>
+			</section>
+			<section id="mugs">
+			<a href="#mugs">Mugs</a>
+			</section>
+			<section id="misc">
+			<a href="#misc">Miscellaneous</a>
+			</section>
 		</div>
+		
+		
+		
 	</div>
 	<div class="column-40">
 		<div class="shop-module">
